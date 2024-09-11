@@ -9,20 +9,26 @@ sudo apt-get update
 sudo apt-get install docker.io -y
 ```
 # نصب Docker Compose از آخرین نسخه
+```sh 
 VERSION=$(curl --silent https://api.github.com/repos/docker/compose/releases/latest | grep -Po '"tag_name": "\K.*\d')
 DESTINATION=/usr/local/bin/docker-compose
 sudo curl -L https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o $DESTINATION
 sudo chmod 755 $DESTINATION
+```
 
 # نصب Node.js، npm و yarn
+```sh 
 sudo apt-get install npm -y
 sudo npm install n -g
 sudo n stable
 sudo npm i -g yarn
+```
 
 # بررسی نصب‌ها
+```sh 
 docker --version
 docker-compose --version
 node -v
 npm -v
 yarn -v
+```
