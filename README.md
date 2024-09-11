@@ -1,7 +1,7 @@
 1. تنظیمات اولیه و نصب Docker، docker-compose، Node.js، npm و yarn
 ابتدا سیستم را به‌روزرسانی و ابزارهای لازم را نصب می‌کنیم:
 
-#!/bin/bash
+
 
 # 1. آپدیت مخازن و نصب Docker و Docker Compose
 ```sh 
